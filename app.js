@@ -17,4 +17,4 @@ app.get("/", function(req, res){
     res.redirect("/index.html")
 });
 
-server.listen(6666);
+server.listen(3000);
