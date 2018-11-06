@@ -1,0 +1,9 @@
+{
+    "name": "personalSite",
+    "version": "0.0.1",
+    "private": "true",
+    "dependencies": {
+        "express":"3.11.0",
+        "socket.io": "0.9.x"
+    }
+}
