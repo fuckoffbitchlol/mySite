@@ -1,7 +1,23 @@
 <!doctype html>
 <html>
 <head>
-FROM HELL
+<!-- set unicode for html -->
+<meta charset="utf-8">
+<!-- add css and jquery file -->
+<link rel="stylesheet" href="page.css">
+<script src = "jq/jquery-1.9.1.js"></script>
 </head>
+<script>
+$.ajax({
+  url: 'https://v2.jinrishici.com/one.json',
+  xhrFields: {
+     withCredentials: true
+  },
+  success: function (result, status) {
+      var poemJson = result.data;
+      $("body").html(poemJson.content);
+  }
+});
+</script>
 <body>BITCH FUCK OFF</body>
 </html
